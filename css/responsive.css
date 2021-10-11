@@ -1,0 +1,93 @@
+/*
+  about size
+  about area
+  about font
+  about background
+  about position
+  about display
+  about option
+*/
+
+@media screen and (max-width: 1000px) {
+  /* top */
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+  .heading h2 {
+    font-size: 20px;
+  }
+  /* lesson */
+  .lessons {
+    flex-wrap: wrap;
+  }
+  .lesson {
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  /* footer */
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  /* header */
+  .header-right {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  /* top */
+  .top-wrapper {
+    text-align: left;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+  .top-wrapper p {
+    font-size: 14px;
+  }
+  .btn {
+    width: 100%;
+  }
+  .facebook {
+    margin-bottom: 10px;
+  }
+  /* lesson */
+  .lessons {
+    flex-direction: column;
+  }
+  .lesson {
+    width: 100%;
+  }
+  /* hamburger */
+  #gnav,
+  .open,
+  .close,
+  .menu-icon {
+    display: block;
+  }
+  aside {
+    width: 30%;
+    height: 100%;
+    top: 65px;
+    right: -250px;
+    background-color: rgba(34, 49, 52, 0.5);
+    position: absolute;
+    transition: all 0.2s;
+    z-index: 10;
+  }
+  input[type="checkbox"]:checked ~ aside {
+    right: 0;
+    display: block;
+  }
+  input[type="checkbox"]:checked ~ .back {
+    width: 100%;
+    height: 100%;
+    top: 65px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    z-index: 10;
+  }
+}
